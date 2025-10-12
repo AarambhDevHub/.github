@@ -18,7 +18,7 @@
 
 ## 🎯 What We Build
 
-Creating **high-performance web frameworks** and **systems programming tools** in Rust and Go that deliver exceptional speed without sacrificing developer experience[web:42].
+Creating **high-performance web frameworks** and **systems programming tools** in Rust and Go that deliver exceptional speed without sacrificing developer experience.
 
 - 🔥 Web Frameworks with 100K+ req/sec performance
 - 🦀 Systems tools: databases, compilers, containers
@@ -40,6 +40,7 @@ Creating **high-performance web frameworks** and **systems programming tools** i
 
 | Project | Description | Performance |
 |---------|-------------|-------------|
+| **[Multi-Cam Face Tracker](https://github.com/AarambhDevHub/multi-cam-face-tracker)** | Real-time face tracking | Multi-camera support |
 | **[Mini Database](https://github.com/AarambhDevHub/mini-database)** | Graph database with SQL | 138K ops/sec |
 | **[Mini Kafka](https://github.com/AarambhDevHub/mini-kafka)** | Distributed message queue | 347ns latency |
 | **[Mini Redis](https://github.com/AarambhDevHub/mini-redis)** | In-memory key-value store | 50K ops/sec |
@@ -53,29 +54,50 @@ Creating **high-performance web frameworks** and **systems programming tools** i
 ## 🚀 Quick Start
 
 ### Blaze (Go)
-```
+```bash
 go get github.com/AarambhDevHub/blaze
 ```
 
-```
-app := blaze.New()
-app.Get("/", func(c *blaze.Context) error {
-    return c.JSON(map[string]string{"message": "Hello!"})
-})
-app.Listen(":3000")
+```go
+package main
+
+import (
+    "log"
+    "github.com/AarambhDevHub/blaze/pkg/blaze"
+)
+
+func main() {
+    app := blaze.New()
+
+    app.GET("/", func(c *blaze.Context) error {
+        return c.JSON(blaze.Map{
+            "message": "Hello, Blaze! 🔥",
+        })
+    })
+
+    log.Fatal(app.ListenAndServeGraceful())
+}
 ```
 
 ### Ignitia (Rust)
-```
+```bash
 cargo add ignitia
 ```
 
-```
-let mut app = App::new();
-app.get("/", |_req| async {
-    Response::json(json!({"message": "Hello!"}))
-});
-app.listen("0.0.0.0:3000").await;
+```rust
+use ignitia::{Router, Server, Response};
+use std::net::SocketAddr;
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let router = Router::new()
+        .get("/", || async { Ok(Response::text("Hello, Ignitia! 🔥")) });
+    
+    let addr: SocketAddr = "0.0.0.0:3000".parse()?;
+    Server::new(router, addr)
+        .ignitia()
+        .await
+}
 ```
 
 ---
@@ -105,12 +127,6 @@ We welcome contributions! Here's how:
 4. Push to branch (`git push origin feature/amazing`)
 5. Open a Pull Request
 
-**Contribution Areas:**
-- 🐛 Bug reports and fixes
-- ✨ Feature implementations
-- 📝 Documentation improvements
-- 🎓 Tutorial creation
-
 ---
 
 ## 🌐 Community
@@ -124,11 +140,6 @@ We welcome contributions! Here's how:
 
 </div>
 
-**Get Help:**
-- 💬 Ask questions on [Discord](https://discord.gg/HDth6PfCnp)
-- 📺 Watch tutorials on [YouTube](https://youtube.com/@aarambhdevhub)
-- 🔍 Check project documentation and issues
-
 ---
 
 ## 💰 Support Us
@@ -136,15 +147,11 @@ We welcome contributions! Here's how:
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/aarambhdevhub)
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-ea4aaa?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/aarambh-darshan)
 
-Your support helps maintain and improve our frameworks and projects!
-
 ---
 
 <div align="center">
 
 **🔥 Building the Future of High-Performance Frameworks 🚀**
-
-*"Where every line of code pushes the boundaries of performance"*
 
 **© 2025 Aarambh Dev Hub | Founder: [Darshan Vichhi](https://github.com/aarambh-darshan)**
 
