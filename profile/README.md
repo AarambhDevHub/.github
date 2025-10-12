@@ -40,11 +40,11 @@ Creating **high-performance web frameworks** and **systems programming tools** i
 
 | Project | Description | Performance |
 |---------|-------------|-------------|
-| **[Mini Database](https://github.com/AarambhDevHub/mini-database)** | Graph database with SQL | 138K ops/sec |
-| **[Mini Kafka](https://github.com/AarambhDevHub/mini-kafka)** | Distributed message queue | 347ns latency |
-| **[Mini Redis](https://github.com/AarambhDevHub/mini-redis)** | In-memory key-value store | 50K ops/sec |
-| **[Mini Docker](https://github.com/AarambhDevHub/mini-docker-rust)** | Container runtime | Production-ready |
-| **[Mini Git](https://github.com/AarambhDevHub/mini-git)** | Version control system | Full VCS features |
+| **[Mini Database](https://github.com/aarambh-darshan/mini-database)** | Graph database with SQL | 138K ops/sec |
+| **[Mini Kafka](https://github.com/aarambh-darshan/mini-kafka)** | Distributed message queue | 347ns latency |
+| **[Mini Redis](https://github.com/aarambh-darshan/mini-redis)** | In-memory key-value store | 50K ops/sec |
+| **[Mini Docker](https://github.com/aarambh-darshan/mini-docker-rust)** | Container runtime | Production-ready |
+| **[Mini Git](https://github.com/aarambh-darshan/mini-git)** | Version control system | Full VCS features |
 
 **[View All Projects →](https://github.com/orgs/AarambhDevHub/repositories)**
 
