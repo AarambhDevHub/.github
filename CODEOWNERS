@@ -1,0 +1,5 @@
+# Only aarambh-darshan can approve changes
+* @aarambh-darshan
+
+# Protect the CODEOWNERS file itself
+/.github/CODEOWNERS @aarambh-darshan
