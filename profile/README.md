@@ -120,28 +120,9 @@ Next.js-inspired **file-based routing Rust framework** on top of Axum. Compile-t
 ![Stack](https://img.shields.io/badge/Axum%20%7C%20syn%20%7C%20build.rs-blue?style=flat-square)
 
 </td>
-<td width="50%">
-
-### [Chitra (चित्र)](https://github.com/AarambhDevHub/chitra)
-
-Rust video composition framework targeting **sub-4-minute export** for 10-minute videos — vs Remotion's 25-40 minutes. Rayon parallel rendering + FFmpeg piping.
-
-![Stack](https://img.shields.io/badge/Rayon%20%7C%20FFmpeg%20%7C%20Leptos-blue?style=flat-square)
-
-</td>
+<td width="50%"></td>
 </tr>
 </table>
-
----
-
-## 🔐 Featured Apps
-
-### [Gupti (गुप्ति)](https://github.com/AarambhDevHub/gupti)
-
-Zero-knowledge one-time secret sharing app. Built with **Axum + Leptos + Spanda**. Secrets are encrypted client-side, stored as single-use tokens — the server never sees plaintext. 9-episode YouTube build series.
-
-![Stack](https://img.shields.io/badge/Axum%20%7C%20Leptos%20%7C%20Spanda-orange?style=flat-square)
-[![Buy](https://img.shields.io/badge/Buy%20on-BMaC-ffdd00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/aarambhdevhub)
 
 ---
 
@@ -170,7 +151,7 @@ A no-nonsense guide for Indian CS/Engineering students stuck in tutorial hell. S
 
 Deep technical builds — framework internals, proc macros, async Rust, production Go, systems programming. No fluff, full code.
 
-**Series:** Axum Full Course · Gupti Build Series · Rust Animation with Spanda · typebridge Deep Dive
+**Series:** Axum Full Course · Rust Animation with Spanda · typebridge Deep Dive
 
 [![Subscribe](https://img.shields.io/badge/Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@aarambhdevhub)
 
@@ -188,7 +169,6 @@ Weekly Sunday sessions at **9:30 PM IST** — pick a topic, prepare it, explain 
 **Runtime/Async:** Tokio · net/http · Hyper 1.x
 **Frontend:** Leptos 0.7 · Tailwind CSS v4
 **Build Tools:** syn · proc-macro2 · build.rs codegen
-**Rendering:** FFmpeg · Rayon · WGSL compute shaders
 **Infra:** Linux · Docker · GitHub Actions
 
 ---
@@ -203,12 +183,6 @@ This org has been building frameworks since day one. The numbers show the compou
 | **Now** | **Ajaya — 291,759 req/sec (+466%)** | **Rudra — 206,686 req/sec (+13%)** |
 
 Every framework we've built taught us something. Ajaya and Rudra are what we learned.
-
----
-
-## 🤝 Sponsorship
-
-Aarambh Dev Hub is proudly sponsored by **[CodeCrafters](https://codecrafters.io)** — build your own Redis, Git, Docker, and more from scratch.
 
 ---
 
