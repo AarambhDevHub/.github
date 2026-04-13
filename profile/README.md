@@ -1,158 +1,232 @@
 <div align="center">
 
-# 🚀 Aarambh Dev Hub
+```
+ █████╗  █████╗ ██████╗  █████╗ ███╗   ███╗██████╗ ██╗  ██╗
+██╔══██╗██╔══██╗██╔══██╗██╔══██╗████╗ ████║██╔══██╗██║  ██║
+███████║███████║██████╔╝███████║██╔████╔██║██████╔╝███████║
+██╔══██║██╔══██║██╔══██╗██╔══██║██║╚██╔╝██║██╔══██╗██╔══██║
+██║  ██║██║  ██║██║  ██║██║  ██║██║ ╚═╝ ██║██████╔╝██║  ██║
+╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═════╝ ╚═╝  ╚═╝
+```
 
-**Building Blazing-Fast Web Frameworks & Systems Programming Tools**
+### **Start Building. Keep Building.**
 
-![Rust](https://img.shields.io/badge/rust-1.70%2B-orange.svg?style=for-the-badge&logo=rust&labelColor=black)
-![Go](https://img.shields.io/badge/go-1.24%2B-blue.svg?style=for-the-badge&logo=go&labelColor=black)
+High-performance web frameworks, systems tools, and developer education — in **Rust** and **Go**.
 
-[![YouTube](https://img.shields.io/youtube/channel/subscribers/UCm5U5uQiZA_mQY5wQ6WfUVA?style=social&logo=youtube&label=Subscribe)](https://youtube.com/@aarambhdevhub)
-[![GitHub Stars](https://img.shields.io/github/stars/AarambhDevHub?style=social)](https://github.com/AarambhDevHub)
+<img src="https://img.shields.io/badge/Rust-1.75+-orange?style=for-the-badge&logo=rust&logoColor=white"/>
+<img src="https://img.shields.io/badge/Go-1.22+-00ADD8?style=for-the-badge&logo=go&logoColor=white"/>
+<img src="https://img.shields.io/badge/open_source-❤️-red?style=for-the-badge"/>
 
-**High-Performance • Production-Ready • Open Source**
+[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@aarambhdevhub)
+[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/HDth6PfCnp)
+[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/aarambh-darshan)
 
 </div>
 
 ---
 
-## 🎯 What We Build
+## ⚡ Flagship Frameworks
 
-Creating **high-performance web frameworks** and **systems programming tools** in Rust and Go that deliver exceptional speed without sacrificing developer experience.
+Two frameworks. Two languages. One philosophy: **zero compromise on performance.**
 
-- 🔥 Web Frameworks with 100K+ req/sec performance
-- 🦀 Systems tools: databases, compilers, containers
-- 🌐 Distributed systems and networking applications
-- 📚 Educational content and tutorials
+<table>
+<tr>
+<td width="50%">
+
+### [Ajaya (अजय)](https://github.com/AarambhDevHub/ajaya) — Rust
+
+> *"The Unconquerable Rust Web Framework"*
+
+Built on **Tokio + Hyper 1.x**. Zero-allocation hot path. Beats Axum on `ab`, 2× more consistent than Actix on latency.
+
+```
+wrk:  291,759 req/sec  @  363µs avg
+ab:    27,834 req/sec  @    7ms max
+stdev:    369µs  (vs Actix 802µs)
+```
+
+![Version](https://img.shields.io/badge/v0.1.6-orange?style=flat-square)
+![License](https://img.shields.io/badge/MIT%20%2B%20Apache%202.0-blue?style=flat-square)
+
+</td>
+<td width="50%">
+
+### [Rudra (रुद्र)](https://github.com/AarambhDevHub/rudra) — Go
+
+> *"Fierce. Fast. Fearless."*
+
+Built on **net/http + custom radix tree**. Beats Fiber on static routes. **2× faster than Gin and Echo** on parameterized routes. Phase 0 — zero optimizations yet.
+
+```
+wrk static:  206,686 req/sec  @  688µs avg
+wrk params:  189,005 req/sec  @  708µs avg
+vs Fiber:    +2.4%  vs Gin: +46%  vs Echo: +53%
+```
+
+![Version](https://img.shields.io/badge/v0.0.9-brightgreen?style=flat-square)
+![Phase](https://img.shields.io/badge/phase_0-complete-brightgreen?style=flat-square)
+![License](https://img.shields.io/badge/MIT%20%2B%20Apache%202.0-blue?style=flat-square)
+
+</td>
+</tr>
+</table>
+
+> Both frameworks benchmarked on the same hardware: Intel Core i3-1115G4, 8GB RAM, Pop OS.
+> `wrk -t4 -c100 -d10s` — identical test conditions, no tuning applied.
 
 ---
 
-## ⚡ Featured Projects
+## 🛠️ Developer Tools
 
-### **Production Frameworks**
+<table>
+<tr>
+<td width="50%">
 
-| Project | Language | Performance | Description |
-|---------|----------|-------------|-------------|
-| **[Blaze](https://github.com/AarambhDevHub/blaze)** | Go | 190K+ req/sec | High-performance web framework with HTTP/2, WebSocket, caching |
-| **[Ignitia](https://github.com/AarambhDevHub/ignitia)** | Rust | 155K+ req/sec | Blazing-fast framework with radix routing, zero-copy optimization |
+### [typebridge](https://github.com/AarambhDevHub/typebridge)
 
-### **Systems Programming**
-
-| Project | Description | Performance |
-|---------|-------------|-------------|
-| **[Multi-Cam Face Tracker](https://github.com/AarambhDevHub/multi-cam-face-tracker)** | Real-time face tracking | Multi-camera support |
-| **[Mini Database](https://github.com/AarambhDevHub/mini-database)** | Graph database with SQL | 138K ops/sec |
-| **[Mini Kafka](https://github.com/AarambhDevHub/mini-kafka)** | Distributed message queue | 347ns latency |
-| **[Mini Redis](https://github.com/AarambhDevHub/mini-redis)** | In-memory key-value store | 50K ops/sec |
-| **[Mini Docker](https://github.com/AarambhDevHub/mini-docker-rust)** | Container runtime | Production-ready |
-| **[Mini Git](https://github.com/AarambhDevHub/mini-git)** | Version control system | Full VCS features |
-
-**[View All Projects →](https://github.com/orgs/AarambhDevHub/repositories)**
-
----
-
-## 🚀 Quick Start
-
-### Blaze (Go)
-```bash
-go get github.com/AarambhDevHub/blaze
-```
-
-```go
-package main
-
-import (
-    "log"
-    "github.com/AarambhDevHub/blaze/pkg/blaze"
-)
-
-func main() {
-    app := blaze.New()
-
-    app.GET("/", func(c *blaze.Context) error {
-        return c.JSON(blaze.Map{
-            "message": "Hello, Blaze! 🔥",
-        })
-    })
-
-    log.Fatal(app.ListenAndServeGraceful())
-}
-```
-
-### Ignitia (Rust)
-```bash
-cargo add ignitia
-```
+Rust proc macro SDK that generates **TypeScript, Python, Go, Swift, Kotlin, Zod, GraphQL SDL, and JSON Schema** from annotated Rust structs and enums. One annotation, 8 languages.
 
 ```rust
-use ignitia::{Router, Server, Response};
-use std::net::SocketAddr;
-
-#[tokio::main]
-async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let router = Router::new()
-        .get("/", || async { Ok(Response::text("Hello, Ignitia! 🔥")) });
-    
-    let addr: SocketAddr = "0.0.0.0:3000".parse()?;
-    Server::new(router, addr)
-        .ignitia()
-        .await
+#[typebridge(typescript, python, go, zod)]
+pub struct User {
+    pub id: Uuid,
+    pub email: String,
+    pub role: UserRole,
 }
 ```
 
----
+![Crates](https://img.shields.io/badge/crates.io-published-orange?style=flat-square)
+![Workspace](https://img.shields.io/badge/14+_crates-workspace-blue?style=flat-square)
 
-## 💻 Tech Stack
+</td>
+<td width="50%">
 
-**Languages:** Rust • Go • Zig • Python • C++  
-**Frameworks:** Tokio • FastHTTP • Hyper  
-**Tools:** Docker • Kubernetes • Linux
+### [Spanda (स्पन्द)](https://github.com/AarambhDevHub/spanda)
 
----
+Production Rust animation library. 38+ easing functions, spring physics, GPU batch animation via WGSL compute shaders, SVG path parsing, scroll-linked animations, FLIP transitions, color interpolation in Oklch and CIE L\*a\*b\*. Bevy integration. `no_std` support.
 
-## 👤 Founder & Maintainer
+![Crates](https://img.shields.io/badge/crates.io-v0.9.1-orange?style=flat-square)
+![Features](https://img.shields.io/badge/GPU%20%7C%20Bevy%20%7C%20no__std-blue?style=flat-square)
 
-**Darshan Vichhi** ([@aarambh-darshan](https://github.com/aarambh-darshan))  
-Systems Programming Expert | Rust & Go Specialist | 5+ years experience
+</td>
+</tr>
+<tr>
+<td width="50%">
 
----
+### [Vega (वेग)](https://github.com/aarambh-darshan/vega)
 
-## 🤝 Contributing
+Next.js-inspired **file-based routing Rust framework** on top of Axum. Compile-time route codegen via `build.rs` and `syn` — zero runtime overhead, no manual `mod` declarations.
 
-We welcome contributions! Here's how:
+![Stack](https://img.shields.io/badge/Axum%20%7C%20syn%20%7C%20build.rs-blue?style=flat-square)
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing`)
-3. Commit changes (`git commit -m 'Add feature'`)
-4. Push to branch (`git push origin feature/amazing`)
-5. Open a Pull Request
+</td>
+<td width="50%">
 
----
+### [Chitra (चित्र)](https://github.com/AarambhDevHub/chitra)
 
-## 🌐 Community
+Rust video composition framework targeting **sub-4-minute export** for 10-minute videos — vs Remotion's 25-40 minutes. Rayon parallel rendering + FFmpeg piping.
 
-<div align="center">
+![Stack](https://img.shields.io/badge/Rayon%20%7C%20FFmpeg%20%7C%20Leptos-blue?style=flat-square)
 
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@aarambhdevhub)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/HDth6PfCnp)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/aarambhdevhub)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/darshan-vichhi-rust-developer)
-
-</div>
+</td>
+</tr>
+</table>
 
 ---
 
-## 💰 Support Us
+## 🔐 Featured Apps
+
+### [Gupti (गुप्ति)](https://github.com/AarambhDevHub/gupti)
+
+Zero-knowledge one-time secret sharing app. Built with **Axum + Leptos + Spanda**. Secrets are encrypted client-side, stored as single-use tokens — the server never sees plaintext. 9-episode YouTube build series.
+
+![Stack](https://img.shields.io/badge/Axum%20%7C%20Leptos%20%7C%20Spanda-orange?style=flat-square)
+[![Buy](https://img.shields.io/badge/Buy%20on-BMaC-ffdd00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/aarambhdevhub)
+
+---
+
+## 🧠 Systems Projects
+
+| Project | Description | Highlight |
+|---------|-------------|-----------|
+| [mini-database](https://github.com/AarambhDevHub/mini-database) | Graph DB with SQL-like query interface | 138K ops/sec |
+| [mini-kafka](https://github.com/AarambhDevHub/mini-kafka) | Distributed message queue in Rust | 347ns latency |
+| [mini-redis](https://github.com/AarambhDevHub/mini-redis) | In-memory key-value store | 50K ops/sec |
+| [mini-docker-rust](https://github.com/AarambhDevHub/mini-docker-rust) | Container runtime from scratch | Linux namespaces + cgroups |
+| [mini-git](https://github.com/AarambhDevHub/mini-git) | Version control system from scratch | Full VCS feature set |
+| [multi-cam-face-tracker](https://github.com/AarambhDevHub/multi-cam-face-tracker) | Real-time multi-camera face tracking | Zero-copy frame pipeline |
+
+---
+
+## 📚 Education
+
+### Book — [Aarambh: Your First Real Project](https://buymeacoffee.com/aarambhdevhub)
+
+A no-nonsense guide for Indian CS/Engineering students stuck in tutorial hell. Step-by-step — from zero to a real shipped project.
+
+![Price](https://img.shields.io/badge/₹330%20~%20$3.99-ffdd00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)
+
+### YouTube — [Aarambh Dev Hub](https://youtube.com/@aarambhdevhub)
+
+Deep technical builds — framework internals, proc macros, async Rust, production Go, systems programming. No fluff, full code.
+
+**Series:** Axum Full Course · Gupti Build Series · Rust Animation with Spanda · typebridge Deep Dive
+
+[![Subscribe](https://img.shields.io/badge/Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@aarambhdevhub)
+
+### Discord Study Group
+
+Weekly Sunday sessions at **9:30 PM IST** — pick a topic, prepare it, explain it to the group. Rust, Go, systems, architecture.
+
+[![Join](https://img.shields.io/badge/Join%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/HDth6PfCnp)
+
+---
+
+## 🧰 Tech Stack
+
+**Primary:** Rust · Go
+**Runtime/Async:** Tokio · net/http · Hyper 1.x
+**Frontend:** Leptos 0.7 · Tailwind CSS v4
+**Build Tools:** syn · proc-macro2 · build.rs codegen
+**Rendering:** FFmpeg · Rayon · WGSL compute shaders
+**Infra:** Linux · Docker · GitHub Actions
+
+---
+
+## 📊 Framework Evolution
+
+This org has been building frameworks since day one. The numbers show the compounding:
+
+| Era | Rust | Go |
+|-----|------|----|
+| Early | Ignitia — 51,574 req/sec | Blaze — 182,505 req/sec |
+| **Now** | **Ajaya — 291,759 req/sec (+466%)** | **Rudra — 206,686 req/sec (+13%)** |
+
+Every framework we've built taught us something. Ajaya and Rudra are what we learned.
+
+---
+
+## 🤝 Sponsorship
+
+Aarambh Dev Hub is proudly sponsored by **[CodeCrafters](https://codecrafters.io)** — build your own Redis, Git, Docker, and more from scratch.
+
+---
+
+## 💰 Support the Work
+
+Everything here is open source. If it saves you time or teaches you something:
 
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/aarambhdevhub)
-[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-ea4aaa?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/aarambh-darshan)
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-ea4aaa?style=for-the-badge&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/aarambh-darshan)
+[![Razorpay](https://img.shields.io/badge/Razorpay%20(India)-02042B?style=for-the-badge&logo=razorpay&logoColor=white)](https://razorpay.me/@aarambhdevhub)
+[![Fiverr](https://img.shields.io/badge/Hire%20on%20Fiverr-1DBF73?style=for-the-badge&logo=fiverr&logoColor=white)](https://fiverr.com/s/XL1ab4G)
 
 ---
 
 <div align="center">
 
-**🔥 Building the Future of High-Performance Frameworks 🚀**
+**Aarambh Dev Hub — Start Building. Keep Building.**
 
-**© 2025 Aarambh Dev Hub | Founder: [Darshan Vichhi](https://github.com/aarambh-darshan)**
+*Rust · Go · Systems · Open Source*
 
 </div>
