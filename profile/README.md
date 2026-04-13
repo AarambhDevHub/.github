@@ -165,11 +165,11 @@ Weekly Sunday sessions at **9:30 PM IST** — pick a topic, prepare it, explain 
 
 ## 🧰 Tech Stack
 
-**Primary:** Rust · Go
-**Runtime/Async:** Tokio · net/http · Hyper 1.x
-**Frontend:** Leptos 0.7 · Tailwind CSS v4
-**Build Tools:** syn · proc-macro2 · build.rs codegen
-**Infra:** Linux · Docker · GitHub Actions
+- **Primary:** Rust · Go
+- **Runtime/Async:** Tokio · net/http · Hyper 1.x
+- **Frontend:** Leptos 0.7 · Tailwind CSS v4
+- **Build Tools:** syn · proc-macro2 · build.rs codegen
+- **Infra:** Linux · Docker · GitHub Actions
 
 ---
 
